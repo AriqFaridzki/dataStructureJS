@@ -1,12 +1,13 @@
-function arraySum(array){
-    if(array.length == 0){
-        return array[0];
+function arraySum(array) {
+
+    let sum = 0;
+    for (let index = 0; index < array.length; index++) {
+        sum = array[index] + sum    
     }
 
-    
-    console.log(array);
-    return arraySum(array[array.length - 1])
+    return sum
+
 }
 
+console.log(arraySum([1,2,3,4,5,6]));
 
-console.log(arraySum([1,2,3]));
